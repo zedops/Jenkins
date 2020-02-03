@@ -1,4 +1,4 @@
-node {
+node('slave') {
     def server = Artifactory.server('zedops.jfrog.io')
     def rtGradle = Artifactory.newGradleBuild()
     def buildInfo = Artifactory.newBuildInfo()
